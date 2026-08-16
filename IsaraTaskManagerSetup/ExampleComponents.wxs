@@ -1,0 +1,31 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
+
+			<Component Id="TaskManagerExe">
+				<File Source="$(var.IsaraTaskManager.TargetDir)IsaraTaskManager.exe" />
+			</Component>
+
+			<Component Id="TaskManagerDll">
+				<File Source="$(var.IsaraTaskManager.TargetDir)IsaraTaskManager.dll" />
+			</Component>
+
+			<Component Id="TaskManagerDeps">
+				<File Source="$(var.IsaraTaskManager.TargetDir)IsaraTaskManager.deps.json" />
+			</Component>
+
+			<Component Id="TaskManagerRuntimeConfig">
+				<File Source="$(var.IsaraTaskManager.TargetDir)IsaraTaskManager.runtimeconfig.json" />
+			</Component>
+
+			<Component Id="CsvHelperDll">
+				<File Source="$(var.IsaraTaskManager.TargetDir)CsvHelper.dll" />
+			</Component>
+
+			<Component Id="NewtonsoftJsonDll">
+				<File Source="$(var.IsaraTaskManager.TargetDir)Newtonsoft.Json.dll" />
+			</Component>
+
+		</ComponentGroup>
+	</Fragment>
+</Wix>

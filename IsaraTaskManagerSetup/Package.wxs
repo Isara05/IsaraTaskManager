@@ -1,0 +1,16 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Package
+		Id="IsaraTaskManager"
+		Name="Isara Task Manager"
+		Manufacturer="Isara Erandi"
+		Version="1.0.0"
+		UpgradeCode="{68B2C94E-FB98-49CB-B9AB-61EAED68013E}">
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of Isara Task Manager is already installed." />
+
+		<Feature Id="Main">
+			<ComponentGroupRef Id="ExampleComponents" />
+		</Feature>
+
+	</Package>
+</Wix>
